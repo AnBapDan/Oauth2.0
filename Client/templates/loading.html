@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Static/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Mar 2021 16:48:07 GMT -->
+
+<head>
+    <!-- META TAGS -->
+    <meta charset="utf-8">
+    <meta name="author" content="AtypicalThemes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- WEBSITE TITLE & DESCRIPTION -->
+    <title>Result</title>
+    <meta name="description" content="The best template for game developers and small studios">
+    <meta name="keywords" content="game, gaming, videogame, developer, steam, studio, team">
+
+    <!-- OG meta tags that improve the look of your post on social media -->
+    <meta property="og:site_name" content="" />
+    <!--website name-->
+    <meta property="og:site" content="" />
+    <!--website link-->
+    <meta property="og:title" content="" />
+    <!--Post title-->
+    <meta property="og:description" content="" />
+    <!--Post description-->
+    <meta property="og:image" content="" /><!-- Image link (jpg only)-->
+    <meta property="og:url" content="" />
+    <!--where do you want your post to link to-->
+    <meta property="og:type" content="article" />
+    <!-- Favicon and Apple Icons -->
+    <link rel="stylesheet" href="{{ url_for('static', path='bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='animations.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='lightbox.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='modal-video.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loader-wrapper">
+        <h1 class="loader-logo"><span style="font-size:50px;">waiting for result...</span></h1>
+        <div id="progress"></div>
+
+        <div class="col-md-4" style="width:800px; margin:0 auto;">
+            <div class="job-card">
+                <h3 class="colored">YOUR REPUTATION</h3>
+                <b>Username:</b> <strong> {{Username}}</strong>
+                <p></p>
+                <b>FSkill:</b> <strong> {{FSkill}}</strong>
+                <p></p>
+                <b>FBehaviour:</b> <strong> {{FBehaviour}}</strong>
+                <p></p>
+                <b>Game:</b> <strong> {{Game}}</strong>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <!-- //// SCRIPTS //// -->
+    <script src="static/jquery-3.2.1.min.js"></script>
+    <script src="static/popper.min.js"></script>
+    <script src="static/bootstrap.min.js"></script>
+    <script src="static/blazy.min.js"></script>
+    <script src="static/isotope.pkgd.min.js"></script>
+    <script src="static/lightbox.min.js"></script>
+    <script src="static/jquery-modal-video.min.js"></script>
+    <script src="static/validator.min.js"></script>
+    <script src="static/strider.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0K1n4Y5N2SwIeHETzvqP5ycEMdr-QLAA"></script>
+    <script>
+        var result = '-1';
+        var ws = new WebSocket(`ws://localhost:8000/ws/{{client_id}}`);
+        ws.onclose = function (event) {
+            window.location.replace("http://localhost:8000/gameresult/?result=" + result);
+        };
+        ws.onmessage = function (event) {
+            result = event.data;
+            ws.close();
+        };
+    </script>
+</body>
+
+<!-- Mirrored from www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Static/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Mar 2021 16:48:23 GMT -->
+
+</html>

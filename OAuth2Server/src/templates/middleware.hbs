@@ -1,0 +1,16 @@
+<html>
+
+
+<script>
+    if (window.location.hash) {
+        var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+        access_token = hash.replace("access_token=","").split("&token_type")[0];
+        window.location.replace("http://localhost:3001/Authorized/parsed?access_token="+access_token);
+    } else {
+        // No hash found
+    }
+
+
+</script>
+
+</html>

@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+/* header{
+    background-color: black;
+    z-index:-1;
+} */
+
+.container{
+    position:relative;
+ 
+}
+#logo {
+    font-size: 1.75rem; /* 28px */;
+    letter-spacing: 5px;
+}
+#logo img{
+    position:absolute;
+    top: -45px;
+    left:0px;
+    /* border: #fff 2px solid; */
+}
+.navbar-dark {
+    background-color: black;
+    border: 1px solid black;
+    z-index: 900;
+    transition: 0.3s;
+    position: fixed;
+    height: 130px;
+}
+.scrolled {
+    background-color: rgba(0,0,0,0.8); /* navbar background gradient */
+    z-index: 900;
+}
+.nav-link {
+    font-size: 1.125rem;
+    font-family: 'Nova Square', cursive; 
+    font-weight: 500;
+    margin-top: 5px;
+    transition: 0.2s;
+
+}
+.nav-item{
+    padding-right: 15px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #FFF;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(247, 150, 115);
+}
+.navbar-dark .navbar-nav .nav-link:active {
+    color: rgb(247, 150, 115);
+}
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: rgb(247, 150, 115);
+}
+.navbar-toggler {
+    border: none;
+    cursor: pointer;
+}
+#hamburger .icon-bar {
+    display: block;
+    height: 2px;
+    width: 25px;
+    background: #FFF;
+    margin: 7px 0;
+    transition: .3s ease-in-out;
+}
+/* - Mobile menu animation - */
+#hamburger .icon-bar:nth-child(1) {
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+#hamburger .icon-bar:nth-child(2) {
+   -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+#hamburger .icon-bar:nth-child(3) {
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+#hamburger.open .icon-bar:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#hamburger.open .icon-bar:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+#hamburger.open .icon-bar:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* --------------------------- /////////// X. FOOTER /////////// --------------------------- */
+#footer {
+    width: 100%;
+    min-height: 70px;
+    height: auto;
+    background: #070707;
+    border-top: 2px solid red;
+    padding: 20px 0 0 0;
+}
+.social-links {
+    float: right;
+}
+.social-links li {
+    display: inline;
+    margin-left: 15px;
+}
+.social-links li a {
+    color: #FFF;
+}
+.social-links li a:hover {
+    color: #E48632;
+}
+.social-links li a:focus {
+    color: #E48632;
+}
+#copyright {
+    float: left;
+}
+/* --------------------------- /////////// XI. 404 PAGE /////////// --------------------------- */
+#container-404 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+#container-404 .row-fluid {
+     margin-top: 18%;
+}
+.text-404 h1 {
+    font-family: Anurati, sans-serif;
+    font-size: 4rem;
+}
+.text-404 a {
+    display: inline-block;
+    text-decoration: none;
+}
+/* --------------------------- /////////// XII. RESPONSIVE STYLES /////////// --------------------------- */
+@media (max-width : 991px) {
+    .nav-item > a::first-letter {
+    color: #E48632;
+    }
+    .navbar-dark {
+        background-color: rgba(0,0,0,0.4); /* navbar background gradient */
+    }
+    .scrolled {
+        background-color: rgba(0,0,0,0.8); /* navbar background gradient */
+    }
+    #footer {
+        text-align: center;
+        padding: 10px 0 0 0;
+    }
+    .social-links {
+        float: none;
+    }
+    #copyright {
+        float: none;
+        margin-bottom: 5px;
+    }
+    #container-404 .row-fluid {
+        margin-top: 40%;
+    }
+}
+@media (max-width : 767px) {
+    .large-margin {
+	   margin-bottom: 4em; /* 96px */
+    }
+    .medium-margin {
+        margin-bottom: 3em;
+    }
+    .small-margin {
+        margin-bottom: 2em;
+    }
+    .heading {
+        font-size: 1.50rem;
+    }
+    hr {
+        margin: 0;
+    }
+    #support-image {
+        display: block;
+        margin: 2em auto 0 auto;
+    }
+    .game-card {
+        margin: 0 0 3em 0;
+    }
+    .steam-btn {
+        display: block;
+        text-align: center;
+    }
+    .button-store:nth-of-type(2) {
+        float: right;
+    }
+    .reviews {
+        display: block;
+        margin: 15px auto 0 auto;
+        float: left;
+        width: 100%;
+    }
+    .rating {
+        display: block;
+        margin: 15px auto 0 auto;
+        float: none;
+    }
+    #team figure {
+        margin: 20px auto;
+    }
+    .gallery-item {
+        margin: 5px 0;
+    }
+    .grid-gallery .row {
+        margin: 0;
+    }
+    #newsletter input {
+        width: 100%;
+        display: block;
+        margin: 20px 0;
+    }
+    #newsletter button {
+        width: 100%; 
+        display: block;
+    }
+    #contactForm {
+        margin: 0 0 3em 0;
+    }
+    .text-404 h1 {
+        font-size: 3.5rem;
+    }
+}
+@media (max-width : 480px) {
+    .game-card-left img {
+        min-height: 0;
+    }
+    .score-card {
+        margin: 5px 0;
+    }
+    .hero-caption h1 {
+        font-size: 2.5rem;
+    }
+    .button-store {
+        margin: 5px auto;
+    }
+    .button-store:nth-of-type(2) {
+        float: none;
+    }
+}

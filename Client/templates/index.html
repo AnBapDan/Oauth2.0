@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Static/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Mar 2021 16:48:07 GMT -->
+<head>
+    <!-- META TAGS -->
+    <meta charset="utf-8">
+    <meta name="author" content="AtypicalThemes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+
+    <!-- WEBSITE TITLE & DESCRIPTION -->
+    <title>Username</title>
+    <meta name="description" content="The best template for game developers and small studios">
+    <meta name="keywords" content="game, gaming, videogame, developer, steam, studio, team">
+
+    <link rel="stylesheet" href="{{ url_for('static', path='bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+    
+</head>
+<body > <!-- style="background-color:black;" style="background: url(static/bg.png)"-->
+    <!-- Loading Screen -->
+    <div id="loader-wrapper">
+        <h1 class="loader-logo"><span class="colored">IAA</span><span style="font-size:50px;" >Project</span></h1>
+        <div id="progress"></div>
+        <h3 class="loader-text">LOADING</h3>
+    </div>
+    <form id="newsletter" data-toggle="validator" method="post" action={{ link }}>     
+    <div class="container">
+        <div id="about" class="large-margin"></div>
+         <!-- /// CAREERS SECTION /// -->
+        <div id="careers" class='large-margin'>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="short-hr-center">CHOOSE USERNAME</h2>
+                        <input type="text" name="username" placeholder="Username" required="required"> <!-- Email Field -->
+                        <button type="submit" id="form-signup" class="button">Enter</button>
+                        <div id="msgSignup" class="h3 text-center hidden"></div>
+                </div>
+            </div>
+            
+            <div class="row medium-margin">
+                <div class="col-md-4">
+                    <div class="job-card">
+                        <h3 class="colored">SKILL</h3>
+                        <p>Choose your opponent skill</p>
+                        <div class="tbcol1">
+                            <select class="select-a gameselectps" placeholder="Select Games" name="skill">
+                                <option value=-1>LOWER</option>
+                                <option value=0>EQUAL</option>
+                                <option value=1>HIGHER</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="job-card">
+                        <h3 class="colored">BEHAVIOUR</h3>
+                        <p>Choose your opponent behaviour</p>
+                        <div class="tbcol2">
+                            <select class="select-a gameselectps" placeholder="Select Games" name="behaviour">
+                                <option value=-1>LOWER</option>
+                                <option value=0>EQUAL</option>
+                                <option value=1>HIGHER</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="job-card">
+                        <h3 class="colored">N BINS</h3>
+                        <p>Choose your N BINS</p>
+                        <div class="tbcol3">
+                            <select class="select-a gameselectps" placeholder="Select Games" name="nbins">
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+    <!--//// SCRIPTS //// -->
+    <script src="static/jquery-3.2.1.min.js"></script>
+    <script src="static/popper.min.js"></script>
+    <script src="static/bootstrap.min.js"></script>
+    <script src="static/blazy.min.js"></script>
+    <script src="static/isotope.pkgd.min.js"></script>
+    <script src="static/lightbox.min.js"></script>
+    <script src="static/jquery-modal-video.min.js"></script>
+    <script src="static/validator.min.js"></script>
+    <script src="static/strider.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0K1n4Y5N2SwIeHETzvqP5ycEMdr-QLAA"></script>
+</body>
+
+<!-- Mirrored from www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Static/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Mar 2021 16:48:23 GMT -->
+</html>

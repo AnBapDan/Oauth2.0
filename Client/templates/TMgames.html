@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Static/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Mar 2021 16:48:07 GMT -->
+
+<head>
+    <!-- META TAGS -->
+    <meta charset="utf-8">
+    <meta name="author" content="AtypicalThemes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- WEBSITE TITLE & DESCRIPTION -->
+    <title>TM Games</title>
+    <meta name="description" content="The best template for game developers and small studios">
+    <meta name="keywords" content="game, gaming, videogame, developer, steam, studio, team">
+
+    <!-- OG meta tags that improve the look of your post on social media -->
+    <meta property="og:site_name" content="" />
+    <!--website name-->
+    <meta property="og:site" content="" />
+    <!--website link-->
+    <meta property="og:title" content="" />
+    <!--Post title-->
+    <meta property="og:description" content="" />
+    <!--Post description-->
+    <meta property="og:image" content="" /><!-- Image link (jpg only)-->
+    <meta property="og:url" content="" />
+    <!--where do you want your post to link to-->
+    <meta property="og:type" content="article" />
+
+    <!-- Favicon and Apple Icons -->
+    <link rel="stylesheet" href="{{ url_for('static', path='bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loader-wrapper">
+        <h1 class="loader-logo"><span class="colored">IAA</span><span style="font-size:50px;">Project</span></h1>
+        <div id="progress"></div>
+        <h3 class="loader-text">LOADING</h3>
+    </div>
+
+    <!-- /// Main Container /// -->
+    <div class="container">
+        <!-- /// GAMES SECTION /// -->
+        <div id="games" class="large-margin">
+            <a href="games.html"></a><!-- Nav Anchor -->
+            <p></p>
+            <p></p>
+            <div class="row heading tiny-margin">
+                <div class="col-md-auto">
+                    <h1 class="animation-element slide-down">OUR <span class="colored">GAMES</span></h1>
+                </div>
+                <div class="col">
+                    <hr class="animation-element extend">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-11 small-margin">
+                    <p>This is our game station, where you can play games like cards, chess and checkers against other
+                        opponents</p>
+                </div>
+            </div>
+            <form id="games" data-toggle="validator" method="post" action={{oauth}}>
+                <div class="games-portfolio ">
+                    <!-- Game Card -->
+                    <div class="row game-card pc">
+                        <div class="col-lg-12 col-xl-5 game-card-left">
+                            <a href="static/cards.jpg" data-lightbox="screenshots_aurora">
+                                <div class="overlay">
+                                    <i class="fa fa-picture-o fa-3x"></i>
+                                </div>
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="static/cards.jpg">
+                                    <source media="(min-width: 768px)" srcset="static/cards.jpg">
+                                    <img src="static/cards.jpg" data-src="static/cards.jpg" class="img-fluid b-lazy"
+                                        alt="aurora image">
+                                </picture>
+                            </a>
+                            <a href="static/cards.jpg" data-lightbox="screenshots_aurora"></a>
+                            <a href="static/cards.jpg" data-lightbox="screenshots_aurora"></a>
+                        </div>
+                        <div class="col-lg-12 col-xl-7 game-card-right">
+                            <h2 class="short-hr-left">CARDS</h2>
+                            <p class="game-description">A simple card game.</p>
+                            <div class="reviews">
+                                <button class="button" name="play" type="submit" value="cards">Play!</button>
+                            </div>
+                        </div>
+                    </div><!-- Game Card End -->
+
+                    <!-- Game Chess -->
+                    <div class="row game-card mobile">
+                        <div class="col-lg-12 col-xl-5 game-card-left">
+                            <a href="static/chess.jpg" data-lightbox="screenshots_dark">
+                                <div class="overlay">
+                                    <i class="fa fa-picture-o fa-3x"></i>
+                                </div>
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="static/chess.jpg">
+                                    <source media="(min-width: 768px)" srcset="static/chess.jpg">
+                                    <img src="static/chess.jpg" data-src="static/chess.jpg" class="img-fluid b-lazy"
+                                        alt="aurora image">
+                                </picture>
+                            </a>
+                            <a href="static/chess.jpg" data-lightbox="screenshots_dark"></a>
+                            <a href="static/chess.jpg" data-lightbox="screenshots_dark"></a>
+                        </div>
+                        <div class="col-lg-12 col-xl-7 game-card-right">
+                            <h2 class="short-hr-left">CHESS</h2>
+                            <p class="game-description">Chess is a board game played between two players. Chess is an
+                                abstract strategy game and involves no hidden information. It is played on a square
+                                chessboard with 64 squares arranged in an eight-by-eight grid. At the start, each player
+                                (one controlling the white pieces, the other controlling the black pieces) controls
+                                sixteen
+                                pieces: one king, one queen, two rooks, two bishops, two knights, and eight pawns. The
+                                object of the game is to checkmate the opponent's king, whereby the king is under
+                                immediate
+                                attack (in "check") and there is no way for it to escape.</p>
+                            <div class="reviews">
+                                <button class="button" name="play" type="submit" value="chess">Play!</button>
+                            </div>
+                        </div>
+                    </div><!-- Game Chess End -->
+
+                    <!-- Game Checkers -->
+                    <div class="row game-card mobile">
+                        <div class="col-lg-12 col-xl-5 game-card-left">
+                            <a href="static/checkers.jpg" data-lightbox="screenshots_dark">
+                                <div class="overlay">
+                                    <i class="fa fa-picture-o fa-3x"></i>
+                                </div>
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="static/checkers.jpg">
+                                    <source media="(min-width: 768px)" srcset="static/checkers.jpg">
+                                    <img src="static/checkers.jpg" data-src="static/checkers.jpg"
+                                        class="img-fluid b-lazy" alt="aurora image">
+                                </picture>
+                            </a>
+                            <a href="static/checkers.jpg" data-lightbox="screenshots_dark"></a>
+                            <a href="static/checkers.jpg" data-lightbox="screenshots_dark"></a>
+                        </div>
+                        <div class="col-lg-12 col-xl-7 game-card-right">
+                            <h2 class="short-hr-left">CHECKERS</h2>
+                            <p class="game-description">Checkers is played by two opponents on opposite sides of the
+                                game
+                                board. One player has the dark pieces (usually black); the other has the light pieces
+                                (usually white or red). Players alternate turns. A player cannot move an opponent's
+                                pieces.
+                                A move consists of moving a piece diagonally to an adjacent unoccupied square. If the
+                                adjacent square contains an opponent's piece, and the square immediately beyond it is
+                                vacant, the piece may be captured (and removed from the game) by jumping over it.</p>
+                            <div class="reviews">
+                                <button class="button" name="play" type="submit" value="checkers">Play!</button>
+                            </div>
+                        </div>
+                    </div><!-- Game Card End -->
+                </div>
+            </form>
+        </div>
+
+        <!-- //// SCRIPTS //// -->
+        <script src="static/jquery-3.2.1.min.js"></script>
+        <script src="static/popper.min.js"></script>
+        <script src="static/bootstrap.min.js"></script>
+        <script src="static/blazy.min.js"></script>
+        <script src="static/isotope.pkgd.min.js"></script>
+        <script src="static/lightbox.min.js"></script>
+        <script src="static/jquery-modal-video.min.js"></script>
+        <script src="static/validator.min.js"></script>
+        <script src="static/strider.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0K1n4Y5N2SwIeHETzvqP5ycEMdr-QLAA"></script>
+</body>
+
+<!-- Mirrored from www.atypicalthemes.com/portfolio/strider_demo/pages/StriderDark/Static/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Mar 2021 16:48:23 GMT -->
+
+</html>
