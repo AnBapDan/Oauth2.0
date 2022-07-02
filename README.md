@@ -1,8 +1,11 @@
 # IAA - PROJECT
 ## _Management of players reputation with OAuth2.0 and Authentication of players' with CMD (Chave Móvel Digital)_
 
+Grade 19.2/20
+
 
 This project was developed as an Assignment for the course IAA in Cybersecurity Masters at Universidade de Aveiro by:
+
 
 - Daniel Baptista Andrade - 93313
 - Diogo Miguel Rocha Amaral - 93228
